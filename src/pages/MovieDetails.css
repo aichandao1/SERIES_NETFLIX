@@ -1,0 +1,94 @@
+.details-container {
+  background-color: #141414;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(20, 20, 20, 1),
+    rgba(20, 20, 20, 0.3)
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.overlay h1 {
+  font-size: 48px;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Content box */
+.content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #1f1f1f;
+  border-radius: 12px;
+}
+
+.content h2 {
+  color: #e50914;
+  margin-bottom: 10px;
+}
+
+.content p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-watch,
+.close-btn,
+.btn-detail {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn-watch:hover,
+.close-btn:hover,
+.btn-detail:hover {
+  background-color: #b20710;
+}
+
+/* Trailer */
+.trailer {
+  margin-top: 30px;
+}
+
+.trailer iframe {
+  border-radius: 10px;
+}
+
+/* Not found */
+.not-found {
+  color: white;
+  padding: 30px;
+}

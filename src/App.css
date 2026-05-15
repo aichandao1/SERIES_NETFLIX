@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background-color: #141414;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #141414;
+}
+
+h1 {
+  color: #e50914;
+  font-size: 32px;
+  margin: 20px;
+}
