@@ -1,8 +1,9 @@
-.movies-container {
-  background-color: #141414;
-  min-height: 100vh;
+.movies-grid,
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
   padding: 20px;
-  color: white;
 }
 .movies-grid {
   display: grid;

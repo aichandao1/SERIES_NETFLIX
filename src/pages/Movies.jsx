@@ -1,10 +1,7 @@
-import { useState } from "react";
 import MovieCard from "../components/MovieCard";
 import "./Movies.css";
 
-function Movies() {
-  const [search, setSearch] = useState("");
-
+function Movies({ search }) {
   const movies = [
     {
       id: 1,
@@ -30,14 +27,6 @@ function Movies() {
   return (
     <div className="movies-container">
       <h1 className="movies-title">Films 🎬</h1>
-
-      <input
-        type="text"
-        placeholder="Rechercher un film..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        className="search-input"
-      />
 
       <div className="movies-grid">
         {filteredMovies.length > 0 ? (

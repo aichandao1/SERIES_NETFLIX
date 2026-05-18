@@ -5,12 +5,14 @@
   color: white;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 .movie-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.06);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
 }
 
 .movie-card img {
@@ -21,7 +23,7 @@
 }
 
 .movie-card:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .movie-card h3 {
@@ -30,7 +32,7 @@
   margin: 0;
 }
 
-/* BOUTON TRÈS VISIBLE */
+/* Bouton Netflix */
 .btn-detail {
   width: 100%;
   padding: 12px;
@@ -40,17 +42,6 @@
   cursor: pointer;
   font-weight: bold;
   font-size: 14px;
-  transition: 0.3s;
-}
-
-.btn-detail {
-  width: 100%;
-  padding: 12px;
-  background-color: #e50914;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
   border-radius: 5px;
   transition: 0.3s;
 }
@@ -60,6 +51,6 @@
 }
 
 .btn-detail:active {
-  transform: scale(0.98);
+  transform: scale(0.97);
   opacity: 0.9;
 }

@@ -1,7 +1,5 @@
-import "./App.css";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Series from "./pages/Series";
@@ -13,17 +11,26 @@ function App() {
   const [search, setSearch] = useState("");
 
   return (
-    <div className="app">
+    <>
       <Navbar search={search} setSearch={setSearch} />
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/series" element={<Series />} />
+
+        <Route
+          path="/series"
+          element={<Series search={search} />}
+        />
+
+        <Route
+          path="/movies"
+          element={<Movies search={search} />}
+        />
+
         <Route path="/series/:id" element={<SerieDetails />} />
-        <Route path="/movies" element={<Movies />} />
         <Route path="/movies/:id" element={<MovieDetails />} />
       </Routes>
-    </div>
+    </>
   );
 }
 
